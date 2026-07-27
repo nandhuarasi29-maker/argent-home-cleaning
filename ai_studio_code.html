@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argent Home Cleaning Service - Chennai</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brandBlue: '#0066cc',
+                        brandNavy: '#112233',
+                        brandGreen: '#4CAF50',
+                        brandLightGreen: '#8bc34a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+
+    <!-- Top Bar -->
+    <div class="bg-brandNavy text-white py-2 px-4 text-xs md:text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-phone text-brandGreen mr-1"></i> +91 7085642256</span>
+                <span><i class="fa-solid fa-envelope text-brandGreen mr-1"></i> bapanmiah28@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-location-dot text-brandGreen mr-1"></i> Karapakkam, Chennai</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo Section -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center bg-gray-100 border border-brandGreen">
+                    <span class="text-brandBlue font-extrabold text-xl">A</span>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-extrabold text-brandBlue tracking-wide leading-none">ARGENT</h1>
+                    <p class="text-xs font-semibold text-brandGreen tracking-widest uppercase">Home Cleaning</p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-700">
+                <a href="#home" class="hover:text-brandBlue transition-colors">Home</a>
+                <a href="#services" class="hover:text-brandBlue transition-colors">Services</a>
+                <a href="#about" class="hover:text-brandBlue transition-colors">About Us</a>
+                <a href="#contact" class="hover:text-brandBlue transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:block">
+                <a href="https://wa.me/917085642256" target="_blank" class="bg-brandGreen text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition duration-300 flex items-center gap-2 shadow-md">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Book via WhatsApp
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-3 space-y-3 shadow-lg">
+            <a href="#home" class="block text-gray-700 hover:text-brandBlue font-medium py-1">Home</a>
+            <a href="#services" class="block text-gray-700 hover:text-brandBlue font-medium py-1">Services</a>
+            <a href="#about" class="block text-gray-700 hover:text-brandBlue font-medium py-1">About Us</a>
+            <a href="#contact" class="block text-gray-700 hover:text-brandBlue font-medium py-1">Contact</a>
+            <div class="pt-2 border-t border-gray-100">
+                <a href="https://wa.me/917085642256" target="_blank" class="w-full bg-brandGreen text-white py-2.5 rounded-lg font-bold text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Book via WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 py-16 md:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center md:text-left z-10">
+                <span class="inline-block bg-blue-100 text-brandBlue font-bold text-xs uppercase px-3 py-1.5 rounded-full tracking-wider">
+                    Reliable & Professional
+                </span>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brandNavy leading-tight">
+                    Clean Home,<br class="hidden md:inline"><span class="text-brandBlue">Better Life</span>
+                </h2>
+                <p class="text-gray-600 text-base md:text-lg max-w-lg mx-auto md:mx-0">
+                    Experience premium residential and deep cleaning services tailored for your convenience. Serving Karapakkam and residential communities across Chennai.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2">
+                    <a href="tel:+917085642256" class="bg-brandBlue text-white px-8 py-3.5 rounded-lg font-bold text-center hover:bg-blue-700 transition duration-300 shadow-lg shadow-blue-200 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/917085642256" target="_blank" class="bg-brandGreen text-white px-8 py-3.5 rounded-lg font-bold text-center hover:bg-green-600 transition duration-300 shadow-lg shadow-green-100 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Graphic/Supplies Showcase -->
+            <div class="relative flex justify-center items-center">
+                <div class="absolute w-72 h-72 md:w-96 md:h-96 rounded-full bg-blue-100 opacity-60 filter blur-2xl -z-10 animate-pulse"></div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-2xl border border-gray-100 max-w-md w-full relative">
+                    <div class="absolute -top-4 -right-4 bg-yellow-400 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-md rotate-12">
+                        ⭐
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 border-b border-gray-100 pb-3">
+                            <i class="fa-solid fa-sparkles text-brandLightGreen text-2xl"></i>
+                            <h4 class="font-bold text-brandNavy text-lg">Our Premium Standards</h4>
+                        </div>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-brandGreen mt-0.5"></i>
+                                <span>Expert Deep Kitchen & Bathroom Sanitization</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-brandGreen mt-0.5"></i>
+                                <span>Dust-Free Surface & Floor Mopping</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-brandGreen mt-0.5"></i>
+                                <span>Eco-Friendly, Non-Toxic Cleaning Supplies</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-brandGreen mt-0.5"></i>
+                                <span>Professional & Verified Cleaning Team</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brandGreen font-bold text-sm tracking-wider uppercase">What We Do</span>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brandNavy">Our Cleaning Solutions</h3>
+                <p class="text-gray-600">We offer specialized cleaning services tailored to keep your indoor spaces pristine and welcoming.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:border-brandBlue transition-all group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-2xl mb-6 group-hover:bg-brandBlue group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brandNavy mb-3">Residential Deep Cleaning</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Complete top-to-bottom scrubbing and sanitization of living areas, bedrooms, and common spaces.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:border-brandBlue transition-all group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 rounded-lg bg-green-100 text-brandGreen flex items-center justify-center text-2xl mb-6 group-hover:bg-brandGreen group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-soap"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brandNavy mb-3">Kitchen Sanitization</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Degreasing stovetops, exhaust fans, counters, tile scrub down, and intensive deep cleaning of kitchen surfaces.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:border-brandBlue transition-all group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-2xl mb-6 group-hover:bg-brandBlue group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-toilet"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brandNavy mb-3">Bathroom Deep Cleaning</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Thorough cleaning and descaling of wall tiles, basins, showers, bowls, and removal of hard water stains.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:border-brandBlue transition-all group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 rounded-lg bg-green-100 text-brandGreen flex items-center justify-center text-2xl mb-6 group-hover:bg-brandGreen group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brandNavy mb-3">Sofa & Carpet Cleaning</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Dry vacuuming, shampooing, and stains extraction from fabric sofas, cushions, rugs, and mattresses.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:border-brandBlue transition-all group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-2xl mb-6 group-hover:bg-brandBlue group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-broom-ball"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brandNavy mb-3">Pre-Move-In Cleaning</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Prepare your newly constructed or rented house with comprehensive cleaning before moving in.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:border-brandBlue transition-all group hover:-translate-y-1 duration-300">
+                    <div class="w-14 h-14 rounded-lg bg-green-100 text-brandGreen flex items-center justify-center text-2xl mb-6 group-hover:bg-brandGreen group-hover:text-white transition duration-300">
+                        <i class="fa-solid fa-window-restore"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-brandNavy mb-3">Glass & Window Cleaning</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Professional streak-free glass window cleaning, frame dusting, and net mesh cleaning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-brandBlue font-bold text-sm uppercase tracking-wider">Who We Are</span>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brandNavy">Argent Home Cleaning Service</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Based in Chennai, we represent a modern, detailed approach to residential cleaning. Our company operates with the focus of ensuring every client gains peace of mind through a neat, safe, and hygienic indoor ecosystem.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div class="space-y-2 border-l-4 border-brandBlue pl-4">
+                        <h5 class="font-extrabold text-xl text-brandNavy">Chennai-Based</h5>
+                        <p class="text-gray-500 text-xs">Locally operating with trusted professionals in Karapakkam and nearby suburbs.</p>
+                    </div>
+                    <div class="space-y-2 border-l-4 border-brandGreen pl-4">
+                        <h5 class="font-extrabold text-xl text-brandNavy">Quality Tools</h5>
+                        <p class="text-gray-500 text-xs">Utilizing high-end cleaning reagents, brushers, and sanitizers.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative Visual Mockup -->
+            <div class="bg-gradient-to-tr from-brandBlue to-blue-400 text-white rounded-2xl p-8 md:p-12 shadow-xl space-y-6">
+                <h4 class="text-2xl font-bold">Why Choose Argent?</h4>
+                <div class="space-y-4 text-sm text-blue-50">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-award text-yellow-300 text-xl mt-1"></i>
+                        <div>
+                            <strong class="block text-white">Dedicated Staff</strong>
+                            We deploy reliable service personnel experienced in comprehensive home layouts.
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-clock text-yellow-300 text-xl mt-1"></i>
+                        <div>
+                            <strong class="block text-white">Punctual & Flexible</strong>
+                            Set up timings that match your routines. We value consistency.
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-wallet text-yellow-300 text-xl mt-1"></i>
+                        <div>
+                            <strong class="block text-white">Fair Pricing</strong>
+                            Transparent and affordable quotes with zero hidden service charges.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Strip -->
+    <section class="bg-brandBlue text-white py-12 px-4 text-center">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <h4 class="text-2xl md:text-3xl font-extrabold">Ready to schedule a cleanup?</h4>
+            <p class="text-blue-100 max-w-xl mx-auto">Connect directly through call or leave us a message on WhatsApp for customized pricing quotes.</p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="tel:+917085642256" class="bg-white text-brandBlue px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300 flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Now: +91 7085642256
+                </a>
+                <a href="https://wa.me/917085642256" target="_blank" class="bg-brandGreen text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition duration-300 flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Chat
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brandBlue font-bold text-sm tracking-wider uppercase">Find Us</span>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brandNavy">Get In Touch</h3>
+                <p class="text-gray-600">Have queries? Reach us through any of the contact channels below.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Info cards -->
+                <div class="lg:col-span-1 space-y-6">
+                    <!-- Card 1: Address -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brandNavy mb-1">Office Address</h5>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                3/418 vender rasi amman Kavil, 1st St,<br>
+                                Karapakkam, Chennai,<br>
+                                Tamil Nadu 600097
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Mobile -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-green-100 text-brandGreen flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brandNavy mb-1">Mobile & WhatsApp</h5>
+                            <p class="text-sm text-gray-600">
+                                <a href="tel:+917085642256" class="hover:underline">+91 7085642256</a>
+                            </p>
+                            <p class="text-xs text-gray-400 mt-1">Available for quick queries on WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Email -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brandNavy mb-1">Email Address</h5>
+                            <p class="text-sm text-gray-600">
+                                <a href="mailto:bapanmiah28@gmail.com" class="hover:underline">bapanmiah28@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map Embedded Map for Karapakkam -->
+                <div class="lg:col-span-2 rounded-xl overflow-hidden shadow-md border border-gray-100 h-80 lg:h-auto min-h-[320px]">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15555.22851508678!2d80.22271815190412!3d12.919730073243176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d08b3a72b3d%3A0xc61cfd336a19f0ee!2sKarapakkam%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brandNavy text-white py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 mb-8">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <span class="text-brandBlue font-extrabold text-2xl">ARGENT</span>
+                </div>
+                <p class="text-sm text-gray-400 max-w-sm">
+                    Providing top-tier cleaning and sanitation solutions for modern homes. Helping you secure a healthier, cleaner life.
+                </p>
+            </div>
+            <div class="space-y-3">
+                <h5 class="font-bold text-lg">Quick Links</h5>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#home" class="hover:text-brandBlue">Home</a></li>
+                    <li><a href="#services" class="hover:text-brandBlue">Services</a></li>
+                    <li><a href="#about" class="hover:text-brandBlue">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-brandBlue">Contact</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h5 class="font-bold text-lg">Working Hours</h5>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>Monday - Sunday: 8:00 AM - 8:00 PM</li>
+                    <li class="text-brandGreen font-medium">Open All Days</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-gray-800 text-center text-xs text-gray-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Argent Home Cleaning Service. All Rights Reserved.</p>
+            <p>Designed for Argent Cleaning Chennai.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
